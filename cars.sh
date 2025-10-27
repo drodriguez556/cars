@@ -10,15 +10,15 @@ do
     echo "1) Enter a new car"
     echo "2) Display the list of cars"
     echo "3) Quit and exit the program"
-    read choice
+    read -r choice
 
     case $choice in
         1) echo -n "Enter the year: "
-        read year
+        read -r year
         echo -n "Enter the make: "
-        read make
+        read -r make
         echo -n "Enter the model: "
-        read model
+        read -r model
 
         echo "$year:$make:$model" >> my_old_cars
         echo "Your car has been added !!"
